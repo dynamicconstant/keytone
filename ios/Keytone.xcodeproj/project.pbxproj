@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0802F9752E1681340B9255B7 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006CB45798FC9E805EAD2FC /* KeyboardViewController.swift */; };
+		09C0E564ED51A0CFE380FF9C /* packs in Resources */ = {isa = PBXBuildFile; fileRef = F533D501876287A35CEBE640 /* packs */; };
+		2BF00C23BBD15F3E3FCE9D6C /* KeytoneKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B78B2EC0EFBCD1632BFD4EC4 /* KeytoneKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		34F06B9A20963623124E43B6 /* KeyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B872231ADB59AB5DAFC8F9 /* KeyButton.swift */; };
+		60DBF2933C34D1AB9FF1DB4D /* KeytoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6809F59AD49F3253EFB2F64 /* KeytoneApp.swift */; };
+		7A754FD8F28A97BC79F7535B /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBED68B2BB966728D9E4FD1 /* Pack.swift */; };
+		ABCF69036212227AABBDCAFB /* SoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA542F997318C7FF5EDBB25E /* SoundEngine.swift */; };
+		B14D80C877369B2FC04DF235 /* packs in Resources */ = {isa = PBXBuildFile; fileRef = F533D501876287A35CEBE640 /* packs */; };
+		B9BD4D61FD19843630022949 /* Pack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBED68B2BB966728D9E4FD1 /* Pack.swift */; };
+		BD793577301823CDA3857AE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C85B489ADF08F7D017F4B87C /* Assets.xcassets */; };
+		E200F310EE99810420382760 /* SoundEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA542F997318C7FF5EDBB25E /* SoundEngine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CEF59DFA1A9B5097DCC8D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54640B85B8080B1F047F9561 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43260F4F651FF036381F20CB;
+			remoteInfo = KeytoneKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58D69A1EE9E68CDD078CC6CB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2BF00C23BBD15F3E3FCE9D6C /* KeytoneKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0006CB45798FC9E805EAD2FC /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		0B51B3198D6669052B404701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4EE34057D2B8D71FB08D54F6 /* Keytone.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Keytone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CBED68B2BB966728D9E4FD1 /* Pack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pack.swift; sourceTree = "<group>"; };
+		B78B2EC0EFBCD1632BFD4EC4 /* KeytoneKeyboard.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = KeytoneKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C85B489ADF08F7D017F4B87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0FC69A5B13712FA43BB5154 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F533D501876287A35CEBE640 /* packs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = packs; path = ../packs; sourceTree = SOURCE_ROOT; };
+		F6809F59AD49F3253EFB2F64 /* KeytoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeytoneApp.swift; sourceTree = "<group>"; };
+		F6B872231ADB59AB5DAFC8F9 /* KeyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyButton.swift; sourceTree = "<group>"; };
+		FA542F997318C7FF5EDBB25E /* SoundEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundEngine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		03A7DC1FA19431F4F65CF4D3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				7CBED68B2BB966728D9E4FD1 /* Pack.swift */,
+				FA542F997318C7FF5EDBB25E /* SoundEngine.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4B47B68240FE1E1973C2D049 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EE34057D2B8D71FB08D54F6 /* Keytone.app */,
+				B78B2EC0EFBCD1632BFD4EC4 /* KeytoneKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5AAF965B9FC114FD72202EC4 = {
+			isa = PBXGroup;
+			children = (
+				CD82563507C43D8E136CA6A1 /* keytone */,
+				76EE89ADFE0111C61FFF1840 /* KeytoneApp */,
+				691A81294CBB97D9AC8CB355 /* KeytoneKeyboard */,
+				03A7DC1FA19431F4F65CF4D3 /* Shared */,
+				4B47B68240FE1E1973C2D049 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		691A81294CBB97D9AC8CB355 /* KeytoneKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F0FC69A5B13712FA43BB5154 /* Info.plist */,
+				0006CB45798FC9E805EAD2FC /* KeyboardViewController.swift */,
+				F6B872231ADB59AB5DAFC8F9 /* KeyButton.swift */,
+			);
+			path = KeytoneKeyboard;
+			sourceTree = "<group>";
+		};
+		76EE89ADFE0111C61FFF1840 /* KeytoneApp */ = {
+			isa = PBXGroup;
+			children = (
+				C85B489ADF08F7D017F4B87C /* Assets.xcassets */,
+				0B51B3198D6669052B404701 /* Info.plist */,
+				F6809F59AD49F3253EFB2F64 /* KeytoneApp.swift */,
+			);
+			path = KeytoneApp;
+			sourceTree = "<group>";
+		};
+		CD82563507C43D8E136CA6A1 /* keytone */ = {
+			isa = PBXGroup;
+			children = (
+				F533D501876287A35CEBE640 /* packs */,
+			);
+			name = keytone;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32E9F54C5947BA2D5C344249 /* Keytone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C329AC0C7C891751B7F6A540 /* Build configuration list for PBXNativeTarget "Keytone" */;
+			buildPhases = (
+				AB67956052390B273AC159C5 /* Sources */,
+				70673A7E70D5ECF977EBF59B /* Resources */,
+				58D69A1EE9E68CDD078CC6CB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12989CEFF161B13335C429EF /* PBXTargetDependency */,
+			);
+			name = Keytone;
+			packageProductDependencies = (
+			);
+			productName = Keytone;
+			productReference = 4EE34057D2B8D71FB08D54F6 /* Keytone.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43260F4F651FF036381F20CB /* KeytoneKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B91171EE494FF3F6CD4C0249 /* Build configuration list for PBXNativeTarget "KeytoneKeyboard" */;
+			buildPhases = (
+				7A9677AFCEC41EE641887A83 /* Sources */,
+				15D808EDD63DA4DA9BE3404B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeytoneKeyboard;
+			packageProductDependencies = (
+			);
+			productName = KeytoneKeyboard;
+			productReference = B78B2EC0EFBCD1632BFD4EC4 /* KeytoneKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54640B85B8080B1F047F9561 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					32E9F54C5947BA2D5C344249 = {
+						ProvisioningStyle = Automatic;
+					};
+					43260F4F651FF036381F20CB = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C6487A14B54700892507F3CC /* Build configuration list for PBXProject "Keytone" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5AAF965B9FC114FD72202EC4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4B47B68240FE1E1973C2D049 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32E9F54C5947BA2D5C344249 /* Keytone */,
+				43260F4F651FF036381F20CB /* KeytoneKeyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15D808EDD63DA4DA9BE3404B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14D80C877369B2FC04DF235 /* packs in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70673A7E70D5ECF977EBF59B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD793577301823CDA3857AE5 /* Assets.xcassets in Resources */,
+				09C0E564ED51A0CFE380FF9C /* packs in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A9677AFCEC41EE641887A83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F06B9A20963623124E43B6 /* KeyButton.swift in Sources */,
+				0802F9752E1681340B9255B7 /* KeyboardViewController.swift in Sources */,
+				B9BD4D61FD19843630022949 /* Pack.swift in Sources */,
+				ABCF69036212227AABBDCAFB /* SoundEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB67956052390B273AC159C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60DBF2933C34D1AB9FF1DB4D /* KeytoneApp.swift in Sources */,
+				7A754FD8F28A97BC79F7535B /* Pack.swift in Sources */,
+				E200F310EE99810420382760 /* SoundEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12989CEFF161B13335C429EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43260F4F651FF036381F20CB /* KeytoneKeyboard */;
+			targetProxy = 1CEF59DFA1A9B5097DCC8D7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CEA5FD53FEDBE87399C40F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.2.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		29FB68C2E5D1DCC4B37C7744 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KeytoneKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilnainani.keytone.keyboard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		40BA8BE5E4AB619ACA7CB77D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KeytoneApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilnainani.keytone;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A717272DA682E2438F3AFFD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KeytoneApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilnainani.keytone;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E49EB5F363FCEF45AE0BED4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 0.2.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		EEB762F99F70B4EFE416F40F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KeytoneKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.harshilnainani.keytone.keyboard;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B91171EE494FF3F6CD4C0249 /* Build configuration list for PBXNativeTarget "KeytoneKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB762F99F70B4EFE416F40F /* Debug */,
+				29FB68C2E5D1DCC4B37C7744 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C329AC0C7C891751B7F6A540 /* Build configuration list for PBXNativeTarget "Keytone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40BA8BE5E4AB619ACA7CB77D /* Debug */,
+				A717272DA682E2438F3AFFD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C6487A14B54700892507F3CC /* Build configuration list for PBXProject "Keytone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CEA5FD53FEDBE87399C40F7 /* Debug */,
+				E49EB5F363FCEF45AE0BED4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54640B85B8080B1F047F9561 /* Project object */;
+}
