@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "rain",
+  "name": "Rain",
+  "author": "Keytone",
+  "description": "Every key is a raindrop on a window. Space rolls distant thunder.",
+  "volume": 1.0,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 120,
+    "gain_db": 2.0
+  },
+  "defaults": {
+    "down": [
+      "drop1.wav",
+      "drop2.wav",
+      "drop3.wav",
+      "drop4.wav",
+      "drop5.wav",
+      "drop6.wav",
+      "drop7.wav",
+      "drop8.wav"
+    ]
+  },
+  "groups": {
+    "space": {
+      "down": [
+        "thunder.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "splash.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}

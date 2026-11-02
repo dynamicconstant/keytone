@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "spaceship-console",
+  "name": "Spaceship Console",
+  "author": "Keytone",
+  "description": "Soft bridge-console chirps. Enter engages warp.",
+  "volume": 1.0,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 40,
+    "gain_db": 1.5
+  },
+  "defaults": {
+    "down": [
+      "chirp1.wav",
+      "chirp2.wav",
+      "chirp3.wav",
+      "chirp4.wav",
+      "chirp5.wav",
+      "chirp6.wav"
+    ]
+  },
+  "groups": {
+    "enter": {
+      "down": [
+        "warp.wav"
+      ]
+    },
+    "space": {
+      "down": [
+        "space.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}

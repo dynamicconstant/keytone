@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "id": "drum-kit",
+  "name": "Drum Kit",
+  "author": "Keytone",
+  "description": "Hi-hat on letters, toms on numbers, kick on Space, snare on Enter, crash on Backspace. Type a beat.",
+  "volume": 1.0,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 15,
+    "gain_db": 2.0
+  },
+  "defaults": {
+    "down": [
+      "hat1.wav",
+      "hat2.wav",
+      "hat3.wav",
+      "hat4.wav"
+    ]
+  },
+  "groups": {
+    "letters": {
+      "down": [
+        "hat1.wav",
+        "hat2.wav",
+        "hat3.wav",
+        "hat4.wav"
+      ]
+    },
+    "space": {
+      "down": [
+        "kick.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "snare.wav"
+      ]
+    },
+    "backspace": {
+      "down": [
+        "crash.wav"
+      ]
+    },
+    "tab": {
+      "down": [
+        "open-hat.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [
+        "rim.wav"
+      ],
+      "up": []
+    }
+  },
+  "keys": {
+    "Digit1": {
+      "down": [
+        "tom1.wav"
+      ]
+    },
+    "Digit2": {
+      "down": [
+        "tom1.wav"
+      ]
+    },
+    "Digit3": {
+      "down": [
+        "tom1.wav"
+      ]
+    },
+    "Digit4": {
+      "down": [
+        "tom2.wav"
+      ]
+    },
+    "Digit5": {
+      "down": [
+        "tom2.wav"
+      ]
+    },
+    "Digit6": {
+      "down": [
+        "tom2.wav"
+      ]
+    },
+    "Digit7": {
+      "down": [
+        "tom3.wav"
+      ]
+    },
+    "Digit8": {
+      "down": [
+        "tom3.wav"
+      ]
+    },
+    "Digit9": {
+      "down": [
+        "tom3.wav"
+      ]
+    },
+    "Digit0": {
+      "down": [
+        "tom4.wav"
+      ]
+    },
+    "Minus": {
+      "down": [
+        "tom4.wav"
+      ]
+    },
+    "Equal": {
+      "down": [
+        "tom4.wav"
+      ]
+    }
+  }
+}

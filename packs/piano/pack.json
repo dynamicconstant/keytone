@@ -1,0 +1,266 @@
+{
+  "schema": 1,
+  "id": "piano",
+  "name": "Piano",
+  "author": "Keytone",
+  "description": "Every key is a piano note on a pentatonic scale (low on the left, high on the right), so typing sounds musical.",
+  "volume": 0.6,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 0,
+    "gain_db": 1.0
+  },
+  "defaults": {
+    "down": [
+      "other.wav"
+    ]
+  },
+  "groups": {
+    "space": {
+      "down": [
+        "chord.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "arpeggio.wav"
+      ]
+    },
+    "backspace": {
+      "down": [
+        "low.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {
+    "KeyZ": {
+      "down": [
+        "note00.wav"
+      ]
+    },
+    "KeyX": {
+      "down": [
+        "note01.wav"
+      ]
+    },
+    "KeyC": {
+      "down": [
+        "note02.wav"
+      ]
+    },
+    "KeyV": {
+      "down": [
+        "note03.wav"
+      ]
+    },
+    "KeyB": {
+      "down": [
+        "note04.wav"
+      ]
+    },
+    "KeyN": {
+      "down": [
+        "note05.wav"
+      ]
+    },
+    "KeyM": {
+      "down": [
+        "note06.wav"
+      ]
+    },
+    "Comma": {
+      "down": [
+        "note07.wav"
+      ]
+    },
+    "Period": {
+      "down": [
+        "note08.wav"
+      ]
+    },
+    "Slash": {
+      "down": [
+        "note09.wav"
+      ]
+    },
+    "KeyA": {
+      "down": [
+        "note02.wav"
+      ]
+    },
+    "KeyS": {
+      "down": [
+        "note03.wav"
+      ]
+    },
+    "KeyD": {
+      "down": [
+        "note04.wav"
+      ]
+    },
+    "KeyF": {
+      "down": [
+        "note05.wav"
+      ]
+    },
+    "KeyG": {
+      "down": [
+        "note06.wav"
+      ]
+    },
+    "KeyH": {
+      "down": [
+        "note07.wav"
+      ]
+    },
+    "KeyJ": {
+      "down": [
+        "note08.wav"
+      ]
+    },
+    "KeyK": {
+      "down": [
+        "note09.wav"
+      ]
+    },
+    "KeyL": {
+      "down": [
+        "note10.wav"
+      ]
+    },
+    "Semicolon": {
+      "down": [
+        "note11.wav"
+      ]
+    },
+    "Quote": {
+      "down": [
+        "note12.wav"
+      ]
+    },
+    "KeyQ": {
+      "down": [
+        "note04.wav"
+      ]
+    },
+    "KeyW": {
+      "down": [
+        "note05.wav"
+      ]
+    },
+    "KeyE": {
+      "down": [
+        "note06.wav"
+      ]
+    },
+    "KeyR": {
+      "down": [
+        "note07.wav"
+      ]
+    },
+    "KeyT": {
+      "down": [
+        "note08.wav"
+      ]
+    },
+    "KeyY": {
+      "down": [
+        "note09.wav"
+      ]
+    },
+    "KeyU": {
+      "down": [
+        "note10.wav"
+      ]
+    },
+    "KeyI": {
+      "down": [
+        "note11.wav"
+      ]
+    },
+    "KeyO": {
+      "down": [
+        "note12.wav"
+      ]
+    },
+    "KeyP": {
+      "down": [
+        "note13.wav"
+      ]
+    },
+    "BracketLeft": {
+      "down": [
+        "note14.wav"
+      ]
+    },
+    "BracketRight": {
+      "down": [
+        "note15.wav"
+      ]
+    },
+    "Digit1": {
+      "down": [
+        "note06.wav"
+      ]
+    },
+    "Digit2": {
+      "down": [
+        "note07.wav"
+      ]
+    },
+    "Digit3": {
+      "down": [
+        "note08.wav"
+      ]
+    },
+    "Digit4": {
+      "down": [
+        "note09.wav"
+      ]
+    },
+    "Digit5": {
+      "down": [
+        "note10.wav"
+      ]
+    },
+    "Digit6": {
+      "down": [
+        "note11.wav"
+      ]
+    },
+    "Digit7": {
+      "down": [
+        "note12.wav"
+      ]
+    },
+    "Digit8": {
+      "down": [
+        "note13.wav"
+      ]
+    },
+    "Digit9": {
+      "down": [
+        "note14.wav"
+      ]
+    },
+    "Digit0": {
+      "down": [
+        "note15.wav"
+      ]
+    },
+    "Minus": {
+      "down": [
+        "note16.wav"
+      ]
+    },
+    "Equal": {
+      "down": [
+        "note17.wav"
+      ]
+    }
+  }
+}

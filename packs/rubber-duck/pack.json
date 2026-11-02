@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "rubber-duck",
+  "name": "Rubber Duck",
+  "author": "Keytone",
+  "description": "Squeaky bath-toy duck on every key. Enter gets a proper quack.",
+  "volume": 0.75,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 120,
+    "gain_db": 1.5
+  },
+  "defaults": {
+    "down": [
+      "squeak1.wav",
+      "squeak2.wav",
+      "squeak3.wav",
+      "squeak4.wav",
+      "squeak5.wav"
+    ]
+  },
+  "groups": {
+    "enter": {
+      "down": [
+        "quack.wav"
+      ]
+    },
+    "space": {
+      "down": [
+        "double-quack.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}

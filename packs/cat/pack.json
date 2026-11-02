@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "cat",
+  "name": "Cat",
+  "author": "Keytone",
+  "description": "A cartoon cat: little chirps and mrrps for keys, a full meow on Enter, a hiss on Backspace.",
+  "volume": 1.0,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 90,
+    "gain_db": 1.5
+  },
+  "defaults": {
+    "down": [
+      "mrrp1.wav",
+      "mrrp2.wav",
+      "mrrp3.wav",
+      "mrrp4.wav",
+      "mrrp5.wav"
+    ]
+  },
+  "groups": {
+    "enter": {
+      "down": [
+        "meow.wav"
+      ]
+    },
+    "backspace": {
+      "down": [
+        "hiss.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}

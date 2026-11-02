@@ -4,7 +4,7 @@
   "name": "Retro 8-bit",
   "author": "Keytone",
   "description": "Square-wave blips from an imaginary 1985 console.",
-  "volume": 1.0,
+  "volume": 0.6,
   "trim_silence": true,
   "random": {
     "pitch_cents": 0,

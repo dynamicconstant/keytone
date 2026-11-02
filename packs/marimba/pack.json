@@ -1,0 +1,266 @@
+{
+  "schema": 1,
+  "id": "marimba",
+  "name": "Marimba",
+  "author": "Keytone",
+  "description": "Wooden marimba bars tuned to a pentatonic scale, so whatever you type sounds like a melody.",
+  "volume": 0.6,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 0,
+    "gain_db": 1.0
+  },
+  "defaults": {
+    "down": [
+      "other.wav"
+    ]
+  },
+  "groups": {
+    "space": {
+      "down": [
+        "space.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "enter.wav"
+      ]
+    },
+    "backspace": {
+      "down": [
+        "backspace.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {
+    "KeyZ": {
+      "down": [
+        "bar00.wav"
+      ]
+    },
+    "KeyX": {
+      "down": [
+        "bar01.wav"
+      ]
+    },
+    "KeyC": {
+      "down": [
+        "bar02.wav"
+      ]
+    },
+    "KeyV": {
+      "down": [
+        "bar03.wav"
+      ]
+    },
+    "KeyB": {
+      "down": [
+        "bar04.wav"
+      ]
+    },
+    "KeyN": {
+      "down": [
+        "bar05.wav"
+      ]
+    },
+    "KeyM": {
+      "down": [
+        "bar06.wav"
+      ]
+    },
+    "Comma": {
+      "down": [
+        "bar07.wav"
+      ]
+    },
+    "Period": {
+      "down": [
+        "bar08.wav"
+      ]
+    },
+    "Slash": {
+      "down": [
+        "bar09.wav"
+      ]
+    },
+    "KeyA": {
+      "down": [
+        "bar02.wav"
+      ]
+    },
+    "KeyS": {
+      "down": [
+        "bar03.wav"
+      ]
+    },
+    "KeyD": {
+      "down": [
+        "bar04.wav"
+      ]
+    },
+    "KeyF": {
+      "down": [
+        "bar05.wav"
+      ]
+    },
+    "KeyG": {
+      "down": [
+        "bar06.wav"
+      ]
+    },
+    "KeyH": {
+      "down": [
+        "bar07.wav"
+      ]
+    },
+    "KeyJ": {
+      "down": [
+        "bar08.wav"
+      ]
+    },
+    "KeyK": {
+      "down": [
+        "bar09.wav"
+      ]
+    },
+    "KeyL": {
+      "down": [
+        "bar10.wav"
+      ]
+    },
+    "Semicolon": {
+      "down": [
+        "bar11.wav"
+      ]
+    },
+    "Quote": {
+      "down": [
+        "bar12.wav"
+      ]
+    },
+    "KeyQ": {
+      "down": [
+        "bar04.wav"
+      ]
+    },
+    "KeyW": {
+      "down": [
+        "bar05.wav"
+      ]
+    },
+    "KeyE": {
+      "down": [
+        "bar06.wav"
+      ]
+    },
+    "KeyR": {
+      "down": [
+        "bar07.wav"
+      ]
+    },
+    "KeyT": {
+      "down": [
+        "bar08.wav"
+      ]
+    },
+    "KeyY": {
+      "down": [
+        "bar09.wav"
+      ]
+    },
+    "KeyU": {
+      "down": [
+        "bar10.wav"
+      ]
+    },
+    "KeyI": {
+      "down": [
+        "bar11.wav"
+      ]
+    },
+    "KeyO": {
+      "down": [
+        "bar12.wav"
+      ]
+    },
+    "KeyP": {
+      "down": [
+        "bar13.wav"
+      ]
+    },
+    "BracketLeft": {
+      "down": [
+        "bar14.wav"
+      ]
+    },
+    "BracketRight": {
+      "down": [
+        "bar15.wav"
+      ]
+    },
+    "Digit1": {
+      "down": [
+        "bar06.wav"
+      ]
+    },
+    "Digit2": {
+      "down": [
+        "bar07.wav"
+      ]
+    },
+    "Digit3": {
+      "down": [
+        "bar08.wav"
+      ]
+    },
+    "Digit4": {
+      "down": [
+        "bar09.wav"
+      ]
+    },
+    "Digit5": {
+      "down": [
+        "bar10.wav"
+      ]
+    },
+    "Digit6": {
+      "down": [
+        "bar11.wav"
+      ]
+    },
+    "Digit7": {
+      "down": [
+        "bar12.wav"
+      ]
+    },
+    "Digit8": {
+      "down": [
+        "bar13.wav"
+      ]
+    },
+    "Digit9": {
+      "down": [
+        "bar14.wav"
+      ]
+    },
+    "Digit0": {
+      "down": [
+        "bar15.wav"
+      ]
+    },
+    "Minus": {
+      "down": [
+        "bar16.wav"
+      ]
+    },
+    "Equal": {
+      "down": [
+        "bar17.wav"
+      ]
+    }
+  }
+}

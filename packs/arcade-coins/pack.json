@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "arcade-coins",
+  "name": "Arcade Coins",
+  "author": "Keytone",
+  "description": "Classic platformer bleeps: coins for letters, a jump on Space, a power-up on Enter, damage on Backspace.",
+  "volume": 0.45,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 0,
+    "gain_db": 0.5
+  },
+  "defaults": {
+    "down": [
+      "coin1.wav",
+      "coin2.wav"
+    ]
+  },
+  "groups": {
+    "space": {
+      "down": [
+        "jump.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "power-up.wav"
+      ]
+    },
+    "backspace": {
+      "down": [
+        "damage.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}

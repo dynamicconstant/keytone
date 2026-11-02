@@ -237,6 +237,10 @@ def main():
           groups={"space": {"down": ["space.wav"]}, "enter": {"down": ["enter.wav"]},
                   "backspace": {"down": ["backspace.wav"]}, "modifiers": {"down": ["mod.wav"]}},
           random={"pitch_cents": 0, "gain_db": 1.0})
+    p = ROOT / "retro-8bit" / "pack.json"
+    meta = json.loads(p.read_text())
+    meta["volume"] = 0.6
+    p.write_text(json.dumps(meta, indent=2) + "\n")
 
 
 if __name__ == "__main__":

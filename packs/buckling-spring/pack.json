@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "buckling-spring",
+  "name": "Buckling Spring",
+  "author": "Keytone",
+  "description": "Loud, crunchy 1980s buckling-spring board: a spring ping on every press and release.",
+  "volume": 1.0,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 25,
+    "gain_db": 1.5
+  },
+  "defaults": {
+    "down": [
+      "press1.wav",
+      "press2.wav",
+      "press3.wav",
+      "press4.wav",
+      "press5.wav"
+    ],
+    "up": [
+      "release1.wav",
+      "release2.wav",
+      "release3.wav"
+    ]
+  },
+  "groups": {
+    "space": {
+      "down": [
+        "space.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "enter.wav"
+      ]
+    }
+  },
+  "keys": {}
+}

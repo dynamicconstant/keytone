@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "game-show",
+  "name": "Game Show",
+  "author": "Keytone",
+  "description": "Correct-answer dings for every key, a buzzer on Backspace, and applause when you hit Enter.",
+  "volume": 0.8,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 30,
+    "gain_db": 1.0
+  },
+  "defaults": {
+    "down": [
+      "ding1.wav",
+      "ding2.wav",
+      "ding3.wav"
+    ]
+  },
+  "groups": {
+    "backspace": {
+      "down": [
+        "buzzer.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "applause.wav"
+      ]
+    },
+    "space": {
+      "down": [
+        "chime.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}

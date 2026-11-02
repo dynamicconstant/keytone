@@ -30,6 +30,16 @@ Then allow **Input Monitoring** for Keytone when asked; it lets Keytone hear key
 
 **First launch on Windows:** SmartScreen may say "unknown publisher": click **More info → Run anyway**.
 
+## Sound packs
+
+26 packs ship with Keytone, all synthesized from scratch (`tools/make_packs.py`, `tools/make_more_packs.py`), so they're free to share and remix:
+
+| Keyboards & machines | Sci-fi & games | Nature & cozy | Musical & funny |
+|---|---|---|---|
+| Soft Thock · Clicky · Typewriter · Buckling Spring · Cash Register · Adding Machine · Telegraph · Camera Shutter | Energy Blade · Laser Blaster · Arcade Coins · Retro 8-bit · Spaceship Console · Robot Beeps · Rifle (AK-style) | Rain · Campfire · Pen & Paper · Bubble Wrap · Bubble Pop | Piano · Marimba · Drum Kit · Rubber Duck · Cat · Game Show |
+
+Most packs give Space, Enter and Backspace their own sound (thunder, a reload, a page flip, applause…). Piano and Marimba map each key to a note so typing plays a tune.
+
 ## Building from source
 
 Prerequisites: [Rust](https://rustup.rs) (stable), Node.js 20+, and the [Tauri prerequisites](https://tauri.app/start/prerequisites/) for your OS.

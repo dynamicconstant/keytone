@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "pen-and-paper",
+  "name": "Pen & Paper",
+  "author": "Keytone",
+  "description": "Scratchy pen strokes. Enter turns the page.",
+  "volume": 1.0,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 40,
+    "gain_db": 2.0
+  },
+  "defaults": {
+    "down": [
+      "stroke1.wav",
+      "stroke2.wav",
+      "stroke3.wav",
+      "stroke4.wav",
+      "stroke5.wav",
+      "stroke6.wav"
+    ]
+  },
+  "groups": {
+    "enter": {
+      "down": [
+        "page-flip.wav"
+      ]
+    },
+    "space": {
+      "down": [
+        "lift.wav"
+      ]
+    },
+    "punctuation": {
+      "down": [
+        "dot.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}

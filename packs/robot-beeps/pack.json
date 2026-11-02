@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "robot-beeps",
+  "name": "Robot Beeps",
+  "author": "Keytone",
+  "description": "A chatty little astromech-style robot burbles on every key.",
+  "volume": 0.8,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 100,
+    "gain_db": 1.5
+  },
+  "defaults": {
+    "down": [
+      "beep1.wav",
+      "beep2.wav",
+      "beep3.wav",
+      "beep4.wav",
+      "beep5.wav",
+      "beep6.wav",
+      "beep7.wav",
+      "beep8.wav",
+      "beep9.wav",
+      "beep10.wav"
+    ]
+  },
+  "groups": {
+    "enter": {
+      "down": [
+        "excited.wav"
+      ]
+    },
+    "backspace": {
+      "down": [
+        "sad.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}

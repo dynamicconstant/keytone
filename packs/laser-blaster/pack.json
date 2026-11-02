@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "laser-blaster",
+  "name": "Laser Blaster",
+  "author": "Keytone",
+  "description": "Pew pew. Space fires a charged shot, Enter a big beam.",
+  "volume": 0.8,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 80,
+    "gain_db": 1.0
+  },
+  "defaults": {
+    "down": [
+      "pew1.wav",
+      "pew2.wav",
+      "pew3.wav",
+      "pew4.wav",
+      "pew5.wav",
+      "pew6.wav"
+    ]
+  },
+  "groups": {
+    "space": {
+      "down": [
+        "charged-shot.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "beam.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}

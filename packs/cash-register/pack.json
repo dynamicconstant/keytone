@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "id": "cash-register",
+  "name": "Cash Register",
+  "author": "Keytone",
+  "description": "Chunky mechanical register keys. Enter rings the drawer open: ka-ching!",
+  "volume": 1.0,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 20,
+    "gain_db": 1.5
+  },
+  "defaults": {
+    "down": [
+      "key1.wav",
+      "key2.wav",
+      "key3.wav",
+      "key4.wav"
+    ]
+  },
+  "groups": {
+    "enter": {
+      "down": [
+        "ka-ching.wav"
+      ]
+    },
+    "space": {
+      "down": [
+        "space.wav"
+      ]
+    }
+  },
+  "keys": {}
+}

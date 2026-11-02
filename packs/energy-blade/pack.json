@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "energy-blade",
+  "name": "Energy Blade",
+  "author": "Keytone",
+  "description": "Humming plasma sword: every key is a swing, Enter ignites it, Backspace powers it down.",
+  "volume": 1.0,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 60,
+    "gain_db": 1.5
+  },
+  "defaults": {
+    "down": [
+      "swing1.wav",
+      "swing2.wav",
+      "swing3.wav",
+      "swing4.wav",
+      "swing5.wav"
+    ]
+  },
+  "groups": {
+    "enter": {
+      "down": [
+        "ignite.wav"
+      ]
+    },
+    "backspace": {
+      "down": [
+        "power-down.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "campfire",
+  "name": "Campfire",
+  "author": "Keytone",
+  "description": "Crackling fire: a crackle on every key, a big pop when you hit Space.",
+  "volume": 1.7,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 80,
+    "gain_db": 2.0
+  },
+  "defaults": {
+    "down": [
+      "crackle1.wav",
+      "crackle2.wav",
+      "crackle3.wav",
+      "crackle4.wav",
+      "crackle5.wav",
+      "crackle6.wav",
+      "crackle7.wav",
+      "crackle8.wav"
+    ]
+  },
+  "groups": {
+    "space": {
+      "down": [
+        "pop.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}

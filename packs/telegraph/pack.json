@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "telegraph",
+  "name": "Telegraph",
+  "author": "Keytone",
+  "description": "Morse key: a dit for every letter, a dah for Space, and a sign-off on Enter.",
+  "volume": 0.6,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 0,
+    "gain_db": 0.5
+  },
+  "defaults": {
+    "down": [
+      "dit.wav"
+    ]
+  },
+  "groups": {
+    "space": {
+      "down": [
+        "dah.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "sign-off.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {}
+}
