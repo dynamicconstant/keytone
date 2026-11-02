@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "typewriter",
+  "name": "Typewriter",
+  "author": "Keytone",
+  "description": "Metal type bars, a thumpy space bar and a carriage-return bell on Enter.",
+  "volume": 1.0,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 40,
+    "gain_db": 2.0
+  },
+  "defaults": {
+    "down": [
+      "bar1.wav",
+      "bar2.wav",
+      "bar3.wav",
+      "bar4.wav"
+    ]
+  },
+  "groups": {
+    "space": {
+      "down": [
+        "space.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "bell.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [
+        "shift.wav"
+      ]
+    }
+  },
+  "keys": {}
+}

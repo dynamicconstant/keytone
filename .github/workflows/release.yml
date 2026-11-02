@@ -1,0 +1,71 @@
+name: release
+
+# Push a tag like `v0.1.0` to build installers for macOS, Windows and Linux
+# and publish them as a GitHub Release.
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: macos-latest
+            args: --target universal-apple-darwin
+          - platform: windows-latest
+            args: ""
+          - platform: ubuntu-22.04
+            args: ""
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.platform == 'macos-latest' && 'aarch64-apple-darwin,x86_64-apple-darwin' || '' }}
+
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Linux dependencies
+        if: matrix.platform == 'ubuntu-22.04'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libayatana-appindicator3-dev librsvg2-dev patchelf libasound2-dev libxtst-dev libxi-dev
+
+      - run: npm ci
+
+      - uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # To ship signed & notarized macOS builds later, add these repository
+          # secrets: APPLE_CERTIFICATE, APPLE_CERTIFICATE_PASSWORD,
+          # APPLE_SIGNING_IDENTITY, APPLE_ID, APPLE_PASSWORD, APPLE_TEAM_ID.
+        with:
+          tagName: ${{ github.ref_name }}
+          releaseName: "Keytone ${{ github.ref_name }}"
+          releaseBody: |
+            Make every keystroke sound like anything you want.
+
+            **Downloads**
+            - **macOS** (Apple Silicon & Intel): `Keytone_*_universal.dmg`
+            - **Windows**: `Keytone_*_x64-setup.exe` (or the `.msi`)
+            - **Linux**: `.AppImage` or `.deb`
+
+            **First launch**
+            - **macOS:** this build isn't notarized by Apple yet. Open the .dmg, drag Keytone to Applications, then **right-click Keytone → Open → Open**. (Or: System Settings → Privacy & Security → *Open Anyway*.) Then allow **Input Monitoring** when asked.
+            - **Windows:** SmartScreen may warn about an unknown publisher: click **More info → Run anyway**.
+            - **Linux:** works on X11 sessions (not Wayland).
+          releaseDraft: false
+          prerelease: false
+          args: ${{ matrix.args }}

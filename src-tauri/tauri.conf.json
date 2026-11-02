@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Keytone",
+  "version": "0.1.0",
+  "identifier": "app.keytone.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "label": "main",
+        "title": "Keytone",
+        "width": 1040,
+        "height": 680,
+        "minWidth": 860,
+        "minHeight": 560,
+        "resizable": true,
+        "visible": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: asset: http://asset.localhost; media-src 'self' asset: http://asset.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "Utility",
+    "shortDescription": "Make every keystroke sound like anything you want.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "resources": {
+      "../packs/": "packs/"
+    },
+    "macOS": {
+      "minimumSystemVersion": "10.15",
+      "entitlements": "entitlements.plist",
+      "signingIdentity": "-"
+    },
+    "publisher": "Harshil Nainani",
+    "copyright": "\u00a9 2026 Harshil Nainani. MIT License."
+  }
+}

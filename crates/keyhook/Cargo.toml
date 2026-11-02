@@ -1,0 +1,24 @@
+[package]
+name = "keyhook"
+description = "Minimal, privacy-preserving global key-down/key-up listener. Emits physical key codes only — never characters."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+
+[target.'cfg(target_os = "macos")'.dependencies]
+core-graphics = "0.24"
+core-foundation = "0.10"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+windows-sys = { version = "0.59", features = [
+  "Win32_Foundation",
+  "Win32_UI_WindowsAndMessaging",
+  "Win32_UI_Input_KeyboardAndMouse",
+  "Win32_System_LibraryLoader",
+  "Win32_System_Threading",
+] }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+rdev = "0.5"

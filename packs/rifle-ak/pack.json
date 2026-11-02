@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "rifle-ak",
+  "name": "Rifle (AK-style)",
+  "author": "Keytone",
+  "description": "Every key fires a round. Space = 3-round burst, Enter = reload, Backspace = charging handle.",
+  "volume": 0.6,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 35,
+    "gain_db": 1.5
+  },
+  "defaults": {
+    "down": [
+      "shot1.wav",
+      "shot2.wav",
+      "shot3.wav",
+      "shot4.wav",
+      "shot5.wav"
+    ]
+  },
+  "groups": {
+    "space": {
+      "down": [
+        "burst.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "reload.wav"
+      ]
+    },
+    "backspace": {
+      "down": [
+        "charge.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [],
+      "up": []
+    }
+  },
+  "keys": {
+    "Tab": {
+      "down": [
+        "full-auto.wav"
+      ]
+    }
+  }
+}

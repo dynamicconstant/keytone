@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "bubble-pop",
+  "name": "Bubble Pop",
+  "author": "Keytone",
+  "description": "Playful water-drop pops. Space is a big bloop, Enter a double pop.",
+  "volume": 1.0,
+  "trim_silence": true,
+  "random": {
+    "pitch_cents": 80,
+    "gain_db": 1.0
+  },
+  "defaults": {
+    "down": [
+      "pop1.wav",
+      "pop2.wav",
+      "pop3.wav",
+      "pop4.wav",
+      "pop5.wav"
+    ]
+  },
+  "groups": {
+    "space": {
+      "down": [
+        "space.wav"
+      ]
+    },
+    "enter": {
+      "down": [
+        "enter.wav"
+      ]
+    },
+    "backspace": {
+      "down": [
+        "backspace.wav"
+      ]
+    },
+    "modifiers": {
+      "down": [
+        "mod.wav"
+      ]
+    }
+  },
+  "keys": {}
+}

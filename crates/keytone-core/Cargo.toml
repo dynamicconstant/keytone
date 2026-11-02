@@ -1,0 +1,24 @@
+[package]
+name = "keytone-core"
+description = "Sound packs, key->sound mapping and the low-latency audio engine behind Keytone."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+keyhook = { path = "../keyhook" }
+cpal = "0.15"
+symphonia = { version = "0.5", default-features = false, features = ["wav", "pcm", "mp3", "ogg", "vorbis", "flac", "isomp4", "aac", "adpcm"] }
+hound = "3.5"
+crossbeam-queue = "0.3"
+crossbeam-channel = "0.5"
+parking_lot = "0.12"
+fastrand = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+anyhow = "1"
+log = "0.4"
+
+[dev-dependencies]
+tempfile = "3"

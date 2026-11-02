@@ -1,0 +1,28 @@
+[package]
+name = "keytone"
+description = "Make every keystroke sound like anything you want."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[lib]
+name = "keytone_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+keytone-core = { path = "../crates/keytone-core" }
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-dialog = "2"
+tauri-plugin-autostart = "2"
+tauri-plugin-global-shortcut = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+parking_lot = "0.12"
+log = "0.4"
+env_logger = "0.11"
+anyhow = "1"
+fastrand = "2"
