@@ -1,0 +1,67 @@
+# XcodeGen spec. Generate the Xcode project with:
+#   brew install xcodegen && cd ios && xcodegen
+name: Keytone
+options:
+  bundleIdPrefix: com.harshilnainani
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    MARKETING_VERSION: "0.2.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    CODE_SIGN_STYLE: Automatic
+    TARGETED_DEVICE_FAMILY: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+targets:
+  Keytone:
+    type: application
+    platform: iOS
+    sources:
+      - path: KeytoneApp
+      - path: Shared
+      - path: ../packs
+        type: folder
+        buildPhase: resources
+    info:
+      path: KeytoneApp/Info.plist
+      properties:
+        CFBundleDisplayName: Keytone
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.harshilnainani.keytone
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: NO
+    dependencies:
+      - target: KeytoneKeyboard
+        embed: true
+  KeytoneKeyboard:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: KeytoneKeyboard
+      - path: Shared
+      - path: ../packs
+        type: folder
+        buildPhase: resources
+    info:
+      path: KeytoneKeyboard/Info.plist
+      properties:
+        CFBundleDisplayName: Keytone
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.keyboard-service
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).KeyboardViewController
+          NSExtensionAttributes:
+            IsASCIICapable: false
+            PrefersRightToLeft: false
+            PrimaryLanguage: en-US
+            RequestsOpenAccess: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.harshilnainani.keytone.keyboard
+        GENERATE_INFOPLIST_FILE: NO

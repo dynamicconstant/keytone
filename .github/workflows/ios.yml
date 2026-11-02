@@ -1,0 +1,43 @@
+name: ios
+
+on:
+  push:
+    branches: [main]
+    paths: ["ios/**", "packs/**", ".github/workflows/ios.yml"]
+  pull_request:
+    paths: ["ios/**", "packs/**"]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Show Xcode
+        run: xcodebuild -version
+      - name: Generate project
+        run: |
+          brew install xcodegen
+          cd ios && xcodegen
+      - name: Build app + keyboard (iOS Simulator, unsigned)
+        run: |
+          cd ios
+          set -o pipefail
+          xcodebuild build \
+            -project Keytone.xcodeproj \
+            -scheme Keytone \
+            -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -configuration Debug \
+            CODE_SIGNING_ALLOWED=NO \
+            | tee build.log | grep -E "error:|warning: .*\.swift|BUILD (SUCCEEDED|FAILED)" || true
+          grep -q "BUILD SUCCEEDED" build.log
+      - name: Check the keyboard extension and packs are bundled
+        run: |
+          APP=$(find ~/Library/Developer/Xcode/DerivedData -name "Keytone.app" -path "*iphonesimulator*" | head -1)
+          echo "$APP"
+          test -d "$APP/PlugIns/KeytoneKeyboard.appex"
+          test -f "$APP/packs/soft-thock/pack.json"
+          test -f "$APP/PlugIns/KeytoneKeyboard.appex/packs/piano/pack.json"
+          /usr/libexec/PlistBuddy -c "Print :NSExtension:NSExtensionAttributes:RequestsOpenAccess" "$APP/PlugIns/KeytoneKeyboard.appex/Info.plist"
+          du -sh "$APP"
