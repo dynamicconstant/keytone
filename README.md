@@ -21,7 +21,12 @@ Grab the latest installer from **[Releases](https://github.com/dynamicconstant/k
 | Windows | `Keytone_x.y.z_x64-setup.exe` |
 | Linux | `.AppImage` or `.deb` |
 
-**First launch on macOS:** builds aren't notarized by Apple yet, so drag Keytone to Applications, then **right-click → Open → Open** (or System Settings → Privacy & Security → *Open Anyway*). When asked, allow **Input Monitoring**, which lets Keytone hear key presses in other apps.
+**First launch on macOS:** builds aren't notarized by Apple yet, so macOS says *"Keytone" Not Opened*. Click **Done** (not Move to Trash), then either:
+
+- open **System Settings → Privacy & Security**, scroll to *"Keytone" was blocked…* and click **Open Anyway**, or
+- run `xattr -dr com.apple.quarantine /Applications/Keytone.app` in Terminal.
+
+Then allow **Input Monitoring** for Keytone when asked; it lets Keytone hear key presses in other apps.
 
 **First launch on Windows:** SmartScreen may say "unknown publisher": click **More info → Run anyway**.
 

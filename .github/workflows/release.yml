@@ -64,7 +64,7 @@ jobs:
             - **Linux**: `.AppImage` or `.deb`
 
             **First launch**
-            - **macOS:** this build isn't notarized by Apple yet. Open the .dmg, drag Keytone to Applications, then **right-click Keytone → Open → Open**. (Or: System Settings → Privacy & Security → *Open Anyway*.) Then allow **Input Monitoring** when asked.
+            - **macOS:** this build isn't notarized by Apple yet. Drag Keytone to Applications and open it; when macOS says *Not Opened*, click **Done**, then go to System Settings → Privacy & Security → **Open Anyway** (or run `xattr -dr com.apple.quarantine /Applications/Keytone.app`). Then allow **Input Monitoring** when asked.
             - **Windows:** SmartScreen may warn about an unknown publisher: click **More info → Run anyway**.
             - **Linux:** works on X11 sessions (not Wayland).
           releaseDraft: false
