@@ -68,13 +68,13 @@ keyhook (OS hook thread) ──KeyEvent──▶ dispatch thread ──▶ Mappe
 
 ## Releasing
 
-Bump the version in `src-tauri/tauri.conf.json` and `package.json`, then:
+Bump the version in `src-tauri/tauri.conf.json` and `package.json`, commit, then publish:
 
 ```bash
-git tag v0.1.1 && git push origin v0.1.1
+git push origin main:release
 ```
 
-GitHub Actions builds the macOS, Windows and Linux installers and publishes them as a release.
+(or open **Actions → release → Run workflow**). GitHub Actions builds the macOS, Windows and Linux installers and publishes them as release `v<version>`.
 
 ## Roadmap
 

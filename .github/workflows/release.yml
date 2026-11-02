@@ -1,10 +1,11 @@
 name: release
 
-# Push a tag like `v0.1.0` to build installers for macOS, Windows and Linux
-# and publish them as a GitHub Release.
+# Builds installers for macOS, Windows and Linux and publishes them as a
+# GitHub Release tagged v<version> (version from src-tauri/tauri.conf.json).
+# Trigger: push to the `release` branch, or Actions → release → Run workflow.
 on:
   push:
-    tags: ["v*"]
+    branches: [release]
   workflow_dispatch:
 
 permissions:
@@ -52,8 +53,8 @@ jobs:
           # secrets: APPLE_CERTIFICATE, APPLE_CERTIFICATE_PASSWORD,
           # APPLE_SIGNING_IDENTITY, APPLE_ID, APPLE_PASSWORD, APPLE_TEAM_ID.
         with:
-          tagName: ${{ github.ref_name }}
-          releaseName: "Keytone ${{ github.ref_name }}"
+          tagName: v__VERSION__
+          releaseName: "Keytone v__VERSION__"
           releaseBody: |
             Make every keystroke sound like anything you want.
 
