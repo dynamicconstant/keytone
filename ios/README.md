@@ -4,13 +4,13 @@ A custom keyboard that plays a Keytone sound pack on every key press, in any app
 
 ## Run it on your iPhone (free Apple ID)
 
-1. Install **Xcode** from the Mac App Store, and XcodeGen: `brew install xcodegen`
-2. Generate the project and open it:
+1. Install **Xcode** from the Mac App Store.
+2. Get the code and open the project:
    ```bash
-   cd ios
-   xcodegen
-   open Keytone.xcodeproj
+   git clone https://github.com/dynamicconstant/keytone ~/keytone
+   open ~/keytone/ios/Keytone.xcodeproj
    ```
+   (The project is generated from `project.yml` by CI. To regenerate it yourself: `brew install xcodegen && cd ios && xcodegen`.)
 3. In Xcode, click the **Keytone** project → for **both** targets (*Keytone* and *KeytoneKeyboard*) → **Signing & Capabilities** → **Team**: pick your Apple ID (Add Account… if needed). If the bundle ID is taken, change `com.harshilnainani` to something unique.
 4. Plug in your iPhone (or use Wi-Fi), pick it as the run destination, press **▶ Run**.
 5. On the iPhone: **Settings → General → VPN & Device Management** → trust your developer certificate (first time only). Turn on **Developer Mode** if iOS asks.

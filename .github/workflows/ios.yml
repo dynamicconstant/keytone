@@ -8,6 +8,9 @@ on:
     paths: ["ios/**", "packs/**"]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: macos-15
@@ -41,3 +44,12 @@ jobs:
           test -f "$APP/PlugIns/KeytoneKeyboard.appex/packs/piano/pack.json"
           /usr/libexec/PlistBuddy -c "Print :NSExtension:NSExtensionAttributes:RequestsOpenAccess" "$APP/PlugIns/KeytoneKeyboard.appex/Info.plist"
           du -sh "$APP"
+      - name: Commit the generated Xcode project (so no XcodeGen is needed to open it)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f ios/Keytone.xcodeproj
+          if git diff --cached --quiet; then echo "project unchanged"; exit 0; fi
+          git commit -m "iOS: regenerate Keytone.xcodeproj [skip ci]"
+          git push
